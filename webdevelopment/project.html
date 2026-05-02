@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Name: Elijah White
+Date: April 19, 2026
+Course: Web Design and Dev
+Description: Project page with responsive grid layout and anchor navigation
+-->
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Work Experience</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="nav.css">
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+
+<style>
+/* Prevent images from getting huge */
+.project-card img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">EW</div>
+
+<!-- Hamburger Button -->
+<div class="menu-icon" id="menu-icon">☰</div>
+
+<nav id="nav-menu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="project.html">My Career Portfolio</a></li>
+<li><a href="Reflection.html">Personal Reflection</a></li>
+<li><a href="contact.html">Contact Me</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+
+<h1>My Work Experience</h1>
+
+<!-- Work Experience Table -->
+<figure>
+  <figcaption>Summary of My Work Experience</figcaption>
+
+  <table class="experience-table">
+    <thead>
+      <tr>
+        <th scope="col">Job</th>
+        <th scope="col">Position</th>
+        <th scope="col">Dates</th>
+        <th scope="col">Key Skill</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">Walmart</th>
+        <td>OGP Associate</td>
+        <td>2021 - 2024</td>
+        <td>Order Fulfillment</td>
+      </tr>
+
+      <tr>
+        <th scope="row">KFC</th>
+        <td>Cashier</td>
+        <td>2019 - 2020</td>
+        <td>Customer Service</td>
+      </tr>
+
+      <tr>
+        <th scope="row">Basketball Training</th>
+        <td>Volunteer Trainer</td>
+        <td>2025 - Present</td>
+        <td>Leadership</td>
+      </tr>
+
+      <tr>
+        <th scope="row">All Roles</th>
+        <td>—</td>
+        <td>Combined</td>
+        <td>Time Management</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="4">Experience across retail, food service, and mentorship roles</td>
+      </tr>
+    </tfoot>
+  </table>
+</figure>
+
+<!-- Walmart -->
+<section id="walmart" class="project-card">
+
+    <figure>
+        <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=800&q=60" alt="Grocery worker bagging groceries">
+        <figcaption>Walmart Online Grocery Pickup</figcaption>
+    </figure>
+
+    <article>
+        <h2>OGP Associate | Walmart</h2>
+        <p><strong>Dates:</strong> July 2021 - December 2024</p>
+
+        <p>
+            Fulfilled online grocery orders by selecting items efficiently while maintaining high accuracy and speed standards.
+        </p>
+
+        <blockquote>
+            This role taught me how to work under strict deadlines and use technology to streamline logistics.
+        </blockquote>
+    </article>
+
+</section>
+
+<!-- KFC -->
+<section id="kfc" class="project-card">
+
+    <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/KFC_logo.svg" alt="KFC Logo">
+        <figcaption>KFC Customer Service Experience</figcaption>
+    </figure>
+
+    <article>
+        <h2>Cashier | KFC</h2>
+        <p><strong>Dates:</strong> January 2019 - January 2020</p>
+
+        <p>
+            Handled point-of-sale transactions, managed cash flow, and provided customer service in a high-traffic environment.
+        </p>
+
+        <blockquote>
+            I learned patience and communication in a fast-paced workplace.
+        </blockquote>
+    </article>
+
+</section>
+
+<!-- Basketball -->
+<section id="trainer" class="project-card">
+
+    <figure>
+        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc" alt="Basketball Training">
+        <figcaption>Youth Basketball Training</figcaption>
+    </figure>
+
+    <article>
+        <h2>Volunteer Basketball Trainer</h2>
+        <p><strong>Dates:</strong> January 2025 - Present</p>
+
+        <p>
+            Coached youth athletes on fundamental skills, teamwork, and discipline.
+        </p>
+
+        <blockquote>
+            This role has been the most rewarding because I get to lead and mentor others.
+        </blockquote>
+    </article>
+
+</section>
+
+</main>
+
+<footer>
+    <p>Elijah White — April 29, 2026</p>
+
+    <div class="contact-info">
+        <p>
+            <img src="phone.png" alt="Phone icon" class="icon">
+            (314) 482-9176
+        </p>
+
+        <p>
+            <img src="email.png" alt="Email icon" class="icon">
+            ew.contact84@email.com
+        </p>
+    </div>
+</footer>
+
+<script>
+  const menuIcon = document.getElementById("menu-icon");
+  const navMenu = document.getElementById("nav-menu");
+
+  menuIcon.addEventListener("click", function () {
+    navMenu.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>

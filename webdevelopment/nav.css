@@ -1,0 +1,156 @@
+/* Navigation Styling */
+
+body{
+margin:0;
+font-family:'Open Sans', sans-serif;
+background-color:#F4F6F8;
+}
+
+/* Header Layout */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background-color:#1F3A5F;
+padding:15px 40px;
+}
+
+/* Logo */
+
+.logo{
+font-family:'Montserrat', sans-serif;
+font-size:28px;
+font-weight:bold;
+color:white;
+}
+
+/* Navigation List */
+
+nav ul{
+display:flex;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+/* Navigation Items */
+
+nav li{
+position:relative;
+margin-left:25px;
+}
+
+/* Navigation Links */
+
+nav a{
+text-decoration:none;
+font-family:'Montserrat', sans-serif;
+font-size:16px;
+color:white;
+padding:8px 12px;
+display:block;
+transition:0.3s;
+}
+
+/* Hover Effect */
+
+nav a:hover{
+background-color:#2CA6A4;
+border-radius:5px;
+}
+
+/* ======================
+   DROPDOWN MENU
+====================== */
+
+.dropdown-menu{
+display:none;
+position:absolute;
+top:40px;
+left:0;
+background-color:#1F3A5F;
+flex-direction:column;
+padding:0;
+min-width:180px;
+}
+
+/* Dropdown Items */
+
+.dropdown-menu li{
+margin:0;
+}
+
+/* Show dropdown on hover */
+
+.dropdown:hover .dropdown-menu{
+display:block;
+}
+
+/* =========================
+   DESKTOP NAV FIX 
+========================= */
+
+nav ul{
+display:flex;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+/* =========================
+   HAMBURGER ICON (DEFAULT)
+========================= */
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* =========================
+   MOBILE styles
+========================= */
+
+@media (max-width: 768px) {
+
+  .menu-icon {
+    display: block;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1F3A5F;
+
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 10px 0;
+    z-index: 999;
+
+    /* IMPORTANT: hide by default */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  /* when menu is active */
+  nav.active ul {
+    max-height: 500px;
+  }
+
+  nav li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+}
